@@ -1,0 +1,61 @@
+
+
+.page
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+main
+{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+form
+{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.error
+{
+  color: red;
+}
+
+/*  Haz que las películas se muestren en un grid responsive. */
+.movies
+{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  /* las dos mas importantes */
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+
+  width: 100%;
+  gap: 32px;
+}
+
+.movie
+{
+  text-align: center;
+}
+
+.movie h3, .movie p
+{
+  margin: 0;
+}
+
+.movies img 
+{
+  border-radius: 8px;
+  margin-top: 16px;
+}
